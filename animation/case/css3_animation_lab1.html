@@ -1,0 +1,48 @@
+<style type="text/css">
+	@-webkit-keyframes myanima {
+		0% {
+			opacity: 0;
+			/*初始状态 透明度为0*/
+			border: solid 10px red;
+			display: block;
+			background-color: red
+		}
+
+		30% {
+			background-color: pink;
+			border: solid 20px yellow;
+			width: 40%;
+			opacity: 1;
+		}
+
+		50% {
+			opacity: 0.3;
+			/*中间状态 透明度为0*/
+		}
+
+		100% {
+			width: 20%;
+			border: solid 10px red;
+			opacity: 1;
+			/*结尾状态 透明度为1*/
+		}
+
+	}
+
+	#box {
+		z-index: 100;
+		-webkit-animation-name: myanima;
+		/*动画名称*/
+		display: inline-block;
+		-webkit-animation-duration: 3s;
+		/*动画持续时间*/
+		-webkit-animation-iteration-count: 3;
+		/*动画次数*/
+		-webkit-animation-delay: 0s;
+		/*延迟时间*/
+	}
+</style>
+
+<div id="box">
+	xxx
+</div>
